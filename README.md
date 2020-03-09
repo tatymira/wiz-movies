@@ -18,5 +18,7 @@ Além do padrão Controller/Domain/Service costumeiramente utilizado no mercado 
 
 ### Bibliotecas
 Duas bibliotecas externas foram usadas:
+
 Swashbuckles.AspNetCore (Swagger): para auxiliar no teste e visualização da API criada.
+
 Newtonsoft.Json: para tratamento dos dados retornados da API The Movie DB, de json para objetos manipuláveis no .NET.
