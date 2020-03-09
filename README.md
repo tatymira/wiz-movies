@@ -1,4 +1,4 @@
-## wiz-movies
+### wiz-movies
 
 Este projeto foi feito em uma única camada dividida em três seções básicas:
 Controller: onde foi feito o endpoint de buscar filmes.
