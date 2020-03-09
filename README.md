@@ -14,10 +14,10 @@ Service: onde é feita a requisição para a API The Movie DB, conforme pedido n
   -O json das requisições em The Movie DB retornam uma lista de categorias para cada filme, estas por sua vez, estão inconsistentes. Alguns filmes não possuem nenhuma categoria na lista, outros por sua vez, existem ids na casa dos milhares, porém existem cerca de 29 tipos de categorias de filmes hoje. Dessa forma, foi descartada as categorias trazidas na requisição e no mapeamento da categoria foi sorteado um número de 1 a 29.
   
 ### Padrões 
-Além do padrão Controller/Domain/Service costumeiramente utilizado no mercado de trabalho em TI que separa as classes por definições e papeis dentro do projeto, foi utilizado o padrão de injeção de dependência no construtor que diminui o acoplamento e torna o código mais limpo.
+Foi usado nesse projeto o padrão Controller/Domain/Service que separa as classes por definições e papeis dentro do projeto e é costumeiramente utilizado no mercado de trabalho em TI. Também foi utilizado o padrão Injeção de Dependência no construtor da classe, porque diminui o acoplamento e torna o código mais limpo.
 
 ### Bibliotecas
-Duas bibliotecas externas foram usadas:
+Duas bibliotecas externas foram usadas
 
 Swashbuckles.AspNetCore (Swagger): para auxiliar no teste e visualização da API criada.
 
