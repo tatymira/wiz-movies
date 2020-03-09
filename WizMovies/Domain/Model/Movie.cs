@@ -1,24 +1,28 @@
 using System;
-using WizMovies.Domain.Enum;
+using System.Collections.Generic;
 
 namespace WizMovies.Domain.Model
 {
     public class Movie
     {
 
-        public int Id { get; set; }
-        public string Title { get; set; }
-        public DateTime ReleaseDate { get; set; }
-        public GenderEnum Gender { get; set; }
+        public int Id { get; private set; }
+        public string Title { get; private set; }
+        public DateTime ReleaseDate { get; private set; }
+        public List<Genre> Genres { get; private set; }
 
         public Movie() {}
 
-        public Movie(int id, string title, DateTime releaseDate, int gender)
+        public Movie(int id, string title, DateTime releaseDate)
         {
             Id = id;
             Title = title;
             ReleaseDate = releaseDate;
-            Gender = (GenderEnum)gender;
+        }
+
+        public void AddGenres(List<Genre> genres)
+        {
+            Genres = genres;
         }
 
     }
